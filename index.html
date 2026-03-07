@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Moscow Puzzles Table v3 (Rows 001-020)</title>
+  <style>
+    :root {
+      --bg: #f6f1e7;
+      --paper: #fffdf8;
+      --grid: #d8cfbe;
+      --text: #2a241c;
+      --muted: #6f6658;
+      --accent: #8a4b2a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(138,75,42,0.08), transparent 28%),
+        linear-gradient(180deg, #f9f4ea 0%, var(--bg) 100%);
+    }
+    .wrap {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+    }
+    .sub {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .table-shell {
+      border: 1px solid var(--grid);
+      background: rgba(255,255,255,0.6);
+      box-shadow: 0 18px 60px rgba(72, 49, 28, 0.08);
+      overflow: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      background: var(--paper);
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #efe4d1;
+      border-bottom: 2px solid var(--grid);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 12px 10px;
+    }
+    th, td {
+      border-right: 1px solid var(--grid);
+      border-bottom: 1px solid var(--grid);
+      vertical-align: top;
+    }
+    th:last-child, td:last-child {
+      border-right: 0;
+    }
+    td.num {
+      width: 70px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 18px;
+      background: #fbf6ed;
+      padding: 16px 10px;
+    }
+    td.problem, td.solution {
+      width: calc((100% - 70px) / 2);
+    }
+    .cell-inner {
+      padding: 16px 18px 18px;
+    }
+    .cell-title {
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 1.15;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    p {
+      margin: 0 0 12px;
+      font-size: 17px;
+      line-height: 1.45;
+    }
+    .images {
+      display: grid;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .image-block {
+      margin: 0;
+      padding: 12px;
+      background: #f5efe4;
+      border: 1px solid var(--grid);
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      background: #fff;
+    }
+    .status-pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid #cda788;
+      background: #fff0e5;
+      color: #6c3f25;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .status-pill.muted {
+      border-color: #cfc3b0;
+      background: #f2ede3;
+      color: #6c6458;
+    }
+    @media (max-width: 900px) {
+      .wrap {
+        padding: 14px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      table, thead, tbody, tr, th, td {
+        display: block;
+      }
+      thead {
+        display: none;
+      }
+      td.num {
+        width: auto;
+        text-align: left;
+        padding: 12px 16px 0;
+        border-right: 0;
+        border-bottom: 0;
+      }
+      td.problem, td.solution {
+        width: auto;
+        border-right: 0;
+      }
+      td.solution {
+        border-top: 1px dashed var(--grid);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>The Moscow Puzzles Table v3</h1>
+    <p class="sub">Batch audit output for rows 001-020. Images were rechecked against the source PDF/EPUB pages and reassigned manually where needed.</p>
+    <div class="table-shell">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Problem</th>
+            <th>Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr id="puzzle-1">
+          <td class="num">1</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">OBSERVANT CHILDREN</div>
+      <p>A schoolboy and a schoolgirl have just completed some meteorological measure- ments. They are resting ona knoll. A freight train is passing, its locomotive fiercely fuming and huffing as it pulls the train up a slight incline. Along the railroad bed the wind is wafting evenly, without gusts.</p><p>‘*What wind speed did our measurements show?” the boy asked.</p><p>“Twenty miles per hour.”’</p><p>**That is enough to tell me the train’s speed.”</p><p>“Well now.” The girl was dubious.</p><p>‘All you have to do is watch the movement of the train a bit more closely.”</p><p>The girl thought awhile and also figured it out.</p><p>What they saw was precisely what the artist has drawn. What was the train’s speed?</p><div class="images"><figure class="image-block"><img src="images/native/image_0013_00.jpeg" alt="image_0013_00.jpeg" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>Note the smoke coming out of the locomotive chimney. If the locomotive was standing, its smoke would be going in the wind’s direction. If it was moving forward in the absence of a wind, its smoke would be inclined backward. As shown on opposite , the smoke of the moving locomotive is straight up. Therefore, the train is moving at a speed equal to the wind’s speed: 20 miles per hour.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-2">
+          <td class="num">2</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">THE STONE FLOWER</div>
+      <p>Do you remember the smart craftsman Danila from P. Bazhov’s fairy tale, “The Stone Flower’’?</p><p>They tell in the Urals that Danila, while still an apprentice, took semiprecious Ural stones and chiseled two flowers whose leaves, stems, and petals could be separated. From the parts of these flowers it was possible to make a circular disk.</p><p>Take a piece of paper or cardboard, copy Danila’s flowers from the diagram, then</p><p>cut out the petals, stems, and leaves and see if you can put them together to make a circle.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_002_stone_flower.png" alt="problem_002_stone_flower.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_002_stone_flower.png" alt="solution_002_stone_flower.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-3">
+          <td class="num">3</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">MOVING CHECKERS</div>
+      <p>Place 6 checkers on a table in a row, alternating them black, white, black, white, and so on, as shown.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_003_moving_checkers.png" alt="problem_003_moving_checkers.png" loading="lazy"></figure></div><p>Leave a vacant place large enough for 4 checkers on the left.
+Move the checkers so that all the white ones will end on the left, followed by all the black ones. The checkers must, be moved in pairs, taking 2 adjacent checkers at a time, without disturbing their order, and sliding them to a vacant place. To solve this problem, only three such moves are necessary.
+The theme of this problem is further developed in Problems 94-97.
+If no checkers are available, use coins, or cut pieces out of paper or cardboard.</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>Number the checkers from left to right, as shown. If the open space is on the left, move checkers 2 and 3 to the left (move I in the picture). In the space now vacant place checkers 5 and 6 (move II). Now move checkers 6 and 4 to the left (move III).</p>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_003_moving_checkers.png" alt="solution_003_moving_checkers.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-4">
+          <td class="num">4</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">THREE MOVES</div>
+      <p>Place three piles of matches on a table, one with |1 matches, the second with 7, and the third with 6. You are to move matches so that each pile holds 8 matches. You may add to any pile only as many matches as it already contains, and all the matches must come from one other pile. For example, if a pile holds 6 matches, you may add 6 to it, no more or less.</p><p>You have three moves.</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>First pile to second; second to third; third to first: Pile Initialnumber _ First move Second move Third move First 11 11-7= 4 4 4+4=8 Second 7 7+7=14 14-6= 8 8 Third 6 6 6+6=12 12-4=8</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-5">
+          <td class="num">5</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">COUNT!</div>
+      <p>How many different triangles are there in the figure?</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_005_count.png" alt="problem_005_count.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>Thirty-five.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-6">
+          <td class="num">6</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">THE GARDENER’S ROUTE</div>
+      <p>The diagram shows the plan of an apple orchard (each dot is an apple tree). The gardener started with the square containing a star, and he worked his way through</p><p>“TALE So708080 oEososon Soe 7e08o nao 7onon SOsosoeo noon CELE</p><p>all the squares, with or without apple trees, one after another. He never returned to a square previously occupied. He did not walk diagonally and he did not walk through the six shaded squares (which contain buildings). At the end of his route the gardener found himself on the starred square again.</p><p>Copy the diagram and see if you can trace the gardener’s route.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_006_gardeners_route.png" alt="problem_006_gardeners_route.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>A possible route is shown in the diagram.</p>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_006_gardeners_route.png" alt="solution_006_gardeners_route.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-7">
+          <td class="num">7</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">FIVE APPLES</div>
+      <p>Five apples are in a basket. How do you divide them among five girls so that each girl gets an apple, but one apple remains in the basket?</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>Give the fifth girl her apple in the basket.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-8">
+          <td class="num">8</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">DON’T THINK TOO LONG</div>
+      <p>How many cats are in a small room if in each of the four corners a cat is sitting, and opposite each cat there sit 3 cats, and at each cat’s tail a cat is sitting?</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>Four cats, each near the tail of a cat in an adjacent corner.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-9">
+          <td class="num">9</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">DOWN AND UP</div>
+      <p>A boy presses a side of a blue pencil to a side of a yellow pencil, holding both pencils vertically. One inch of the pressed side of the blue pencil, measuring from</p><p>its lower end, is smeared with paint. The yellow pencil is held steady while the boy slides the blue pencil down | inch, continuing to press it against the yellow one. He returns the blue pencil to its former position, then again slides it down ] inch. He continues until he has lowered the blue pencil 5 times and raised it 5 times—10 moves in all. \</p><p>Suppose that during this time the paint neither dries nor diminishes in quantity. How many inches of each pencil will be smeared with paint after the tenth move?</p><p>This problem was thought up by the mathematician Leonid Mikhailovich Rybakov while on his way home after a successful duck hunt. What led him to make up this puzzle is explained in the answer, but don’t read it until you have solved the problem.</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>At the start, | inch of the yellow pencil gets smeared with wet paint. As the blue pencil is moved downward, a second inch of the blue pencil’s length is smeared. After the next upward movement the second inch of the blue pencil smears a second inch of the yellow pencil. Each pair of down-up moves of the blue pencil smears 1 more inch of each pencil. Five pairs of moves will smear 5 inches. This, together with the initial inch, makes 6 inches for each pencil. (Looking at his boots, Leonid Mikhailovich noticed that their entire lengths were muddied where they usually rub each other while he walks. ‘“How puzzling,” he thought. “I didn’t walk in any deep mud, yet my boots are muddied up to the knees.” Now you understand the origin of the puzzle.)</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-10">
+          <td class="num">10</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">CROSSING A RIVER</div>
+      <p>A detachment of soldiers must cross a river. The bridge is broken, the river is deep. What to do? Suddenly the officer in charge spots 2 boys playing in a rowboat by the shore. The boat is so tiny, however, that it can only hold 2 boys or 1 soldier. Still, all the soldiers succeed in crossing the river in the boat. How?</p><p>Solve this problem either in your mind or practically—that is, by moving check- ers, matches, or the like on a table across an imaginary river.</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>First the boys cross the river. One stays ashore while the other brings the boat to the soldiers and gets out. A soldier gets in the boat and crosses. The boy who has stayed there brings the boat back to the soldiers, then takes the other boy to the other shore. Again a boy brings the boat back, gets out, a second soldier crosses over. . . until all the soldiers have crossed.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-11">
+          <td class="num">11</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">WOLF, GOAT, AND CABBAGE</div>
+      <p>This problem can be found in eighth-century writings.</p><p>A man has to take a wolf, a goat, and some cabbage across a river. His rowboat has enough room for the man plus either the wolf or the goat or the cabbage. If he takes the cabbage with him, the wolf will eat the goat. If he takes the wolf, the goat will eat the cabbage. Only when the man is present are the goat and the cabbage</p><p>safe from their enemies. All the same, the man carries wolf, goat, and cabbage across the river.</p><p>How?</p><div class="images"><figure class="image-block"><img src="images/native/image_0017_00.jpeg" alt="image_0017_00.jpeg" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>A wolf does not eat cabbage, so the crossing can start with the goat. a: See The man leaves the goat and returns, puts the cabbage in the boat and takes it across. On the other bank, he leaves the cabbage but takes the goat. He leaves the goat on the first bank and takes the wolf across. He leaves the cabbage with the wolf and rows back alone. He takes the goat across. ee</p>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_011_wolf_goat_cabbage.png" alt="solution_011_wolf_goat_cabbage.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-12">
+          <td class="num">12</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">ROLL THEM OUT</div>
+      <p>In a long, narrow chute there are 8 balls: 4 black ones on the left, and 4 white ones—slightly larger—on the right. In the middle of the chute there is a small niche</p><p>| ee00 OOOO,</p><p>that can hold 1! ball of either color. The chute’s right end has an opening large enough for a black but not a white ball. Roll all the black balls out of the chute. (No, you can’t pick them up.)</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_012_roll_them_out.png" alt="problem_012_roll_them_out.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_012_roll_them_out.png" alt="solution_012_roll_them_out.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-13">
+          <td class="num">13</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">REPAIRING A CHAIN</div>
+      <p>Do you know why the young craftsman in the picture is so deep in thought? He has 5 short pieces of chain that must be joined into a long chain. Should he open ring 3</p><p>Tocigul Go (1 Hint gas</p><p>eo</p><p>te</p><p>CAD GEO CES</p><p>j g</p><p>GED GED</p><p>(first operation), link it to ring 4 (second operation), then unfasten ring 6 and link it to ring 7, and so on? He could complete his task in 8 operations, but he wants to do it in 6. How does he do it?</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_013_repairing_chain_scene.png" alt="problem_013_repairing_chain_scene.png" loading="lazy"></figure><figure class="image-block"><img src="images/manual_crops/problem_013_repairing_chain_numbered_links.png" alt="problem_013_repairing_chain_numbered_links.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>He opens all 3 rings of 1 piece (3 operations). With these he links the other 4 pieces together. Total: 6 operations.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-14">
+          <td class="num">14</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">CORRECT THE ERROR</div>
+      <p>With 12 matches form the “‘equation” shown.</p><p>VI—-NV=</p><p>The equation shows that 6 — 4 = 9. Correct it by shifting just 1 match.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_014_correct_error.png" alt="problem_014_correct_error.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>Two solutions are shown: Vi--IV=X V+IV=IX</p>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_014_correct_error.png" alt="solution_014_correct_error.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-15">
+          <td class="num">15</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">FOUR OUT OF THREE (A JOKE)</div>
+      <p>Three matches are on a table. Without adding another, make 4 out of 3. You are not allowed to break the matches.</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_015_four_out_of_three.png" alt="solution_015_four_out_of_three.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-16">
+          <td class="num">16</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">THREE AND TWO IS EIGHT (ANOTHER JOKE)</div>
+      <p>Place 3 matches on a table. Ask a friend to add 2 more matches to make 8.</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_016_three_and_two_is_eight.png" alt="solution_016_three_and_two_is_eight.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-17">
+          <td class="num">17</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">THREE SQUARES</div>
+      <p>Take 8 small sticks (or matches), 4 of which are half the length of the other 4. Make three equal squares out of the 8 sticks (or matches).</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_017_three_squares.png" alt="solution_017_three_squares.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-18">
+          <td class="num">18</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">HOW MANY ITEMS?</div>
+      <p>An item is made from lead blanks in a lathe shop. Each blank suffices for 1 item.</p><p>Lead shavings accumulated from making 6 items can be melted and made into a blank. How many items can be made from 36 blanks?</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <p>From 36 blanks, 36 items are made. The lead shavings are enough to make 6 blanks, which make 6 more items. But don’t stop here. The new shavings are gooti for 1 more item. Total: 43.</p>
+      
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-19">
+          <td class="num">19</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">ARRANGING FLAGS</div>
+      <p>Komsomol youths have built a small hydroelectric powerhouse. Preparing for its</p><p>opening, young Communist boys and girls are decorating the powerhouse on all four sides with garlands, electric bulbs, and small flags. There are 12 flags.</p><p>au. **%</p><p>eeenk VTTTLS ae</p><p>mo</p><p>Xp \ AWN</p><p>SIS Ty</p><p>At first they arrange the flags 4 to a side, as shown, but then they see that the flags can be arranged 5 or even 6 to a side. How?</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_019_arranging_flags.png" alt="problem_019_arranging_flags.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_019_arranging_flags.png" alt="solution_019_arranging_flags.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        <tr id="puzzle-20">
+          <td class="num">20</td>
+          <td class="problem">
+    <div class="cell-inner">
+      <div class="cell-title">TEN CHAIRS</div>
+      <p>In a rectangular dance hall, how do you place 10 chairs along the walls so that there are an equal number of chairs along each wall?</p>
+    </div>
+    </td>
+          <td class="solution">
+    <div class="cell-inner">
+      <div class="status-pill">Image-Only Answer</div>
+      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_020_ten_chairs.png" alt="solution_020_ten_chairs.png" loading="lazy"></figure></div>
+    </div>
+    </td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
