@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Moscow Puzzles Table v3 (Rows 001-020)</title>
+  <title>The Moscow Puzzles Review</title>
   <style>
     :root {
       --bg: #f6f1e7;
@@ -22,158 +22,35 @@
         radial-gradient(circle at top left, rgba(138,75,42,0.08), transparent 28%),
         linear-gradient(180deg, #f9f4ea 0%, var(--bg) 100%);
     }
-    .wrap {
-      max-width: 1500px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: 32px;
-      line-height: 1.05;
-      letter-spacing: 0.02em;
-    }
-    .sub {
-      margin: 0 0 20px;
-      color: var(--muted);
-      font-size: 15px;
-    }
-    .table-shell {
-      border: 1px solid var(--grid);
-      background: rgba(255,255,255,0.6);
-      box-shadow: 0 18px 60px rgba(72, 49, 28, 0.08);
-      overflow: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      table-layout: fixed;
-      background: var(--paper);
-    }
-    thead th {
-      position: sticky;
-      top: 0;
-      z-index: 2;
-      background: #efe4d1;
-      border-bottom: 2px solid var(--grid);
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 12px 10px;
-    }
-    th, td {
-      border-right: 1px solid var(--grid);
-      border-bottom: 1px solid var(--grid);
-      vertical-align: top;
-    }
-    th:last-child, td:last-child {
-      border-right: 0;
-    }
-    td.num {
-      width: 70px;
-      text-align: center;
-      font-weight: 700;
-      font-size: 18px;
-      background: #fbf6ed;
-      padding: 16px 10px;
-    }
-    td.problem, td.solution {
-      width: calc((100% - 70px) / 2);
-    }
-    .cell-inner {
-      padding: 16px 18px 18px;
-    }
-    .cell-title {
-      margin-bottom: 12px;
-      font-size: 22px;
-      line-height: 1.15;
-      font-weight: 700;
-      color: var(--accent);
-    }
-    p {
-      margin: 0 0 12px;
-      font-size: 17px;
-      line-height: 1.45;
-    }
-    .images {
-      display: grid;
-      gap: 14px;
-      margin-top: 14px;
-    }
-    .image-block {
-      margin: 0;
-      padding: 12px;
-      background: #f5efe4;
-      border: 1px solid var(--grid);
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-      background: #fff;
-    }
-    .status-pill {
-      display: inline-block;
-      padding: 6px 10px;
-      border: 1px solid #cda788;
-      background: #fff0e5;
-      color: #6c3f25;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-    }
-    .status-pill.muted {
-      border-color: #cfc3b0;
-      background: #f2ede3;
-      color: #6c6458;
-    }
-    @media (max-width: 900px) {
-      .wrap {
-        padding: 14px;
-      }
-      h1 {
-        font-size: 26px;
-      }
-      table, thead, tbody, tr, th, td {
-        display: block;
-      }
-      thead {
-        display: none;
-      }
-      td.num {
-        width: auto;
-        text-align: left;
-        padding: 12px 16px 0;
-        border-right: 0;
-        border-bottom: 0;
-      }
-      td.problem, td.solution {
-        width: auto;
-        border-right: 0;
-      }
-      td.solution {
-        border-top: 1px dashed var(--grid);
-      }
-    }
+    .wrap { max-width: 1500px; margin: 0 auto; padding: 24px; }
+    .sub { margin: 0 0 20px; color: var(--muted); font-size: 15px; }
+    .table-shell { border: 1px solid var(--grid); background: rgba(255,255,255,0.6); box-shadow: 0 18px 60px rgba(72, 49, 28, 0.08); overflow: auto; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; background: var(--paper); }
+    thead th { position: sticky; top: 0; z-index: 2; background: #efe4d1; border-bottom: 2px solid var(--grid); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; padding: 12px 10px; }
+    th, td { border-right: 1px solid var(--grid); border-bottom: 1px solid var(--grid); vertical-align: top; }
+    th:last-child, td:last-child { border-right: 0; }
+    td.num { width: 70px; text-align: center; font-weight: 700; font-size: 18px; background: #fbf6ed; padding: 16px 10px; }
+    td.problem, td.solution { width: calc((100% - 70px) / 2); }
+    .cell-inner { padding: 16px 18px 18px; }
+    .cell-title { margin-bottom: 12px; font-size: 22px; line-height: 1.15; font-weight: 700; color: var(--accent); }
+    p { margin: 0 0 12px; font-size: 17px; line-height: 1.45; }
+    .images { display: grid; gap: 14px; margin-top: 14px; }
+    .image-block { margin: 0; padding: 12px; background: #f5efe4; border: 1px solid var(--grid); }
+    img { display: block; width: 100%; height: auto; max-width: 100%; background: #fff; }
+    .status-pill { display: inline-block; padding: 6px 10px; border: 1px solid #cda788; background: #fff0e5; color: #6c3f25; font-size: 13px; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; }
+    .status-pill.muted { border-color: #cfc3b0; background: #f2ede3; color: #6c6458; }
+    .answer-table { width: 100%; border-collapse: collapse; margin-top: 12px; background: #fff; }
+    .answer-table th, .answer-table td { border: 1px solid var(--grid); padding: 8px 10px; text-align: left; font-size: 15px; line-height: 1.35; }
+    .answer-table th { background: #efe4d1; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>The Moscow Puzzles Table v3</h1>
-    <p class="sub">Batch audit output for rows 001-020. Images were rechecked against the source PDF/EPUB pages and reassigned manually where needed.</p>
+    <p class="sub">Preview for review workflow.</p>
     <div class="table-shell">
       <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Problem</th>
-            <th>Solution</th>
-          </tr>
-        </thead>
+        <thead><tr><th>#</th><th>Problem</th><th>Solution</th></tr></thead>
         <tbody>
-          
         <tr id="puzzle-1">
           <td class="num">1</td>
           <td class="problem">
@@ -195,13 +72,13 @@
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">THE STONE FLOWER</div>
-      <p>Do you remember the smart craftsman Danila from P. Bazhov’s fairy tale, “The Stone Flower’’?</p><p>They tell in the Urals that Danila, while still an apprentice, took semiprecious Ural stones and chiseled two flowers whose leaves, stems, and petals could be separated. From the parts of these flowers it was possible to make a circular disk.</p><p>Take a piece of paper or cardboard, copy Danila’s flowers from the diagram, then</p><p>cut out the petals, stems, and leaves and see if you can put them together to make a circle.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_002_stone_flower.png" alt="problem_002_stone_flower.png" loading="lazy"></figure></div>
+      <p>Do you remember the smart craftsman Danila from P. Bazhov’s fairy tale, “The Stone Flower’’?</p><p>They tell in the Urals that Danila, while still an apprentice, took semiprecious Ural stones and chiseled two flowers whose leaves, stems, and petals could be separated. From the parts of these flowers it was possible to make a circular disk.</p><p>Take a piece of paper or cardboard, copy Danila’s flowers from the diagram, then</p><p>cut out the petals, stems, and leaves and see if you can put them together to make a circle.</p><div class="images"><figure class="image-block"><img src="images/manual_overrides/problem_002_stone_flower_source.png" alt="problem_002_stone_flower_source.png" loading="lazy"></figure></div>
     </div>
     </td>
           <td class="solution">
     <div class="cell-inner">
       <div class="status-pill">Image-Only Answer</div>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_002_stone_flower.png" alt="solution_002_stone_flower.png" loading="lazy"></figure></div>
+      <div class="images"><figure class="image-block"><img src="images/manual_overrides/solution_002_stone_flower_source.png" alt="solution_002_stone_flower_source.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -211,10 +88,7 @@
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">MOVING CHECKERS</div>
-      <p>Place 6 checkers on a table in a row, alternating them black, white, black, white, and so on, as shown.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_003_moving_checkers.png" alt="problem_003_moving_checkers.png" loading="lazy"></figure></div><p>Leave a vacant place large enough for 4 checkers on the left.
-Move the checkers so that all the white ones will end on the left, followed by all the black ones. The checkers must, be moved in pairs, taking 2 adjacent checkers at a time, without disturbing their order, and sliding them to a vacant place. To solve this problem, only three such moves are necessary.
-The theme of this problem is further developed in Problems 94-97.
-If no checkers are available, use coins, or cut pieces out of paper or cardboard.</p>
+      <p>Place 6 checkers on a table in a row, alternating them black, white, black, white, and so on, as shown.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_003_moving_checkers.png" alt="problem_003_moving_checkers.png" loading="lazy"></figure></div><p>Leave a vacant place large enough for 4 checkers on the left.</p><p>Move the checkers so that all the white ones will end on the left, followed by all the black ones. The checkers must, be moved in pairs, taking 2 adjacent checkers at a time, without disturbing their order, and sliding them to a vacant place. To solve this problem, only three such moves are necessary.</p><p>The theme of this problem is further developed in Problems 94-97.</p><p>If no checkers are available, use coins, or cut pieces out of paper or cardboard.</p>
     </div>
     </td>
           <td class="solution">
@@ -234,11 +108,10 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
     </div>
     </td>
           <td class="solution">
-    <div class="cell-inner">
-      <p>First pile to second; second to third; third to first: Pile Initialnumber _ First move Second move Third move First 11 11-7= 4 4 4+4=8 Second 7 7+7=14 14-6= 8 8 Third 6 6 6+6=12 12-4=8</p>
-      
-    </div>
-    </td>
+        <div class="cell-inner">
+          <p>First pile to second; second to third; third to first.</p><table class="answer-table"><thead><tr><th>Pile</th><th>Initial Number</th><th>First Move</th><th>Second Move</th><th>Third Move</th></tr></thead><tbody><tr><td>First</td><td>11</td><td>11 - 7 = 4</td><td>4</td><td>4 + 4 = 8</td></tr><tr><td>Second</td><td>7</td><td>7 + 7 = 14</td><td>14 - 6 = 8</td><td>8</td></tr><tr><td>Third</td><td>6</td><td>6</td><td>6 + 6 = 12</td><td>12 - 4 = 8</td></tr></tbody></table>
+        </div>
+        </td>
         </tr>
         
         <tr id="puzzle-5">
@@ -262,13 +135,13 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">THE GARDENER’S ROUTE</div>
-      <p>The diagram shows the plan of an apple orchard (each dot is an apple tree). The gardener started with the square containing a star, and he worked his way through</p><p>“TALE So708080 oEososon Soe 7e08o nao 7onon SOsosoeo noon CELE</p><p>all the squares, with or without apple trees, one after another. He never returned to a square previously occupied. He did not walk diagonally and he did not walk through the six shaded squares (which contain buildings). At the end of his route the gardener found himself on the starred square again.</p><p>Copy the diagram and see if you can trace the gardener’s route.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_006_gardeners_route.png" alt="problem_006_gardeners_route.png" loading="lazy"></figure></div>
+      <p>The diagram shows the plan of an apple orchard (each dot is an apple tree). The gardener started with the square containing a star, and he worked his way through</p><div class="images"><figure class="image-block"><img src="images/manual_overrides/problem_006_gardeners_route_source.png" alt="problem_006_gardeners_route_source.png" loading="lazy"></figure></div><p>all the squares, with or without apple trees, one after another. He never returned to a square previously occupied. He did not walk diagonally and he did not walk through the six shaded squares (which contain buildings). At the end of his route the gardener found himself on the starred square again.</p><p>Copy the diagram and see if you can trace the gardener’s route.</p>
     </div>
     </td>
           <td class="solution">
     <div class="cell-inner">
       <p>A possible route is shown in the diagram.</p>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_006_gardeners_route.png" alt="solution_006_gardeners_route.png" loading="lazy"></figure></div>
+      <div class="images"><figure class="image-block"><img src="images/manual_overrides/solution_006_gardeners_route_source.png" alt="solution_006_gardeners_route_source.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -342,13 +215,13 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">WOLF, GOAT, AND CABBAGE</div>
-      <p>This problem can be found in eighth-century writings.</p><p>A man has to take a wolf, a goat, and some cabbage across a river. His rowboat has enough room for the man plus either the wolf or the goat or the cabbage. If he takes the cabbage with him, the wolf will eat the goat. If he takes the wolf, the goat will eat the cabbage. Only when the man is present are the goat and the cabbage</p><p>safe from their enemies. All the same, the man carries wolf, goat, and cabbage across the river.</p><p>How?</p><div class="images"><figure class="image-block"><img src="images/native/image_0017_00.jpeg" alt="image_0017_00.jpeg" loading="lazy"></figure></div>
+      <p>This problem can be found in eighth-century writings.</p><p>A man has to take a wolf, a goat, and some cabbage across a river. His rowboat has enough room for the man plus either the wolf or the goat or the cabbage. If he takes the cabbage with him, the wolf will eat the goat. If he takes the wolf, the goat will eat the cabbage. Only when the man is present are the goat and the cabbage</p><p>safe from their enemies. All the same, the man carries wolf, goat, and cabbage across the river.</p><div class="images"><figure class="image-block"><img src="images/native/image_0017_00.jpeg" alt="image_0017_00.jpeg" loading="lazy"></figure></div>
     </div>
     </td>
           <td class="solution">
     <div class="cell-inner">
-      <p>A wolf does not eat cabbage, so the crossing can start with the goat. a: See The man leaves the goat and returns, puts the cabbage in the boat and takes it across. On the other bank, he leaves the cabbage but takes the goat. He leaves the goat on the first bank and takes the wolf across. He leaves the cabbage with the wolf and rows back alone. He takes the goat across. ee</p>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_011_wolf_goat_cabbage.png" alt="solution_011_wolf_goat_cabbage.png" loading="lazy"></figure></div>
+      <p>A wolf does not eat cabbage, so the crossing can start with the goat.</p><p>The man leaves the goat and returns, puts the cabbage in the boat and takes it across. On the other bank, he leaves the cabbage but takes the goat.</p><p>He leaves the goat on the first bank and takes the wolf across. He leaves the cabbage with the wolf and rows back alone.</p><p>He takes the goat across.</p>
+      <div class="images"><figure class="image-block"><img src="images/manual_overrides/solution_011_wolf_goat_cabbage_source.png" alt="solution_011_wolf_goat_cabbage_source.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -358,7 +231,7 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">ROLL THEM OUT</div>
-      <p>In a long, narrow chute there are 8 balls: 4 black ones on the left, and 4 white ones—slightly larger—on the right. In the middle of the chute there is a small niche</p><p>| ee00 OOOO,</p><p>that can hold 1! ball of either color. The chute’s right end has an opening large enough for a black but not a white ball. Roll all the black balls out of the chute. (No, you can’t pick them up.)</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_012_roll_them_out.png" alt="problem_012_roll_them_out.png" loading="lazy"></figure></div>
+      <p>In a long, narrow chute there are 8 balls: 4 black ones on the left, and 4 white ones—slightly larger—on the right. In the middle of the chute there is a small niche</p><div class="images"><figure class="image-block"><img src="images/manual_overrides/problem_012_roll_them_out_source.png" alt="problem_012_roll_them_out_source.png" loading="lazy"></figure></div><p>that can hold 1! ball of either color. The chute’s right end has an opening large enough for a black but not a white ball. Roll all the black balls out of the chute. (No, you can’t pick them up.)</p>
     </div>
     </td>
           <td class="solution">
@@ -374,7 +247,7 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">REPAIRING A CHAIN</div>
-      <p>Do you know why the young craftsman in the picture is so deep in thought? He has 5 short pieces of chain that must be joined into a long chain. Should he open ring 3</p><p>Tocigul Go (1 Hint gas</p><p>eo</p><p>te</p><p>CAD GEO CES</p><p>j g</p><p>GED GED</p><p>(first operation), link it to ring 4 (second operation), then unfasten ring 6 and link it to ring 7, and so on? He could complete his task in 8 operations, but he wants to do it in 6. How does he do it?</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_013_repairing_chain_scene.png" alt="problem_013_repairing_chain_scene.png" loading="lazy"></figure><figure class="image-block"><img src="images/manual_crops/problem_013_repairing_chain_numbered_links.png" alt="problem_013_repairing_chain_numbered_links.png" loading="lazy"></figure></div>
+      <p>Do you know why the young craftsman in the picture is so deep in thought? He has 5 short pieces of chain that must be joined into a long chain. Should he open ring 3</p><div class="images"><figure class="image-block"><img src="images/manual_overrides/problem_013_repairing_chain_numbered_links_source.png" alt="problem_013_repairing_chain_numbered_links_source.png" loading="lazy"></figure><figure class="image-block"><img src="images/manual_crops/problem_013_repairing_chain_scene.png" alt="problem_013_repairing_chain_scene.png" loading="lazy"></figure></div><p>(first operation), link it to ring 4 (second operation), then unfasten ring 6 and link it to ring 7, and so on? He could complete his task in 8 operations, but he wants to do it in 6. How does he do it?</p>
     </div>
     </td>
           <td class="solution">
@@ -390,13 +263,13 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">CORRECT THE ERROR</div>
-      <p>With 12 matches form the “‘equation” shown.</p><p>VI—-NV=</p><p>The equation shows that 6 — 4 = 9. Correct it by shifting just 1 match.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_014_correct_error.png" alt="problem_014_correct_error.png" loading="lazy"></figure></div>
+      <p>With 12 matches form the “‘equation” shown.</p><div class="images"><figure class="image-block"><img src="images/manual_overrides/problem_014_correct_the_error_source.png" alt="problem_014_correct_the_error_source.png" loading="lazy"></figure></div>
     </div>
     </td>
           <td class="solution">
     <div class="cell-inner">
       <p>Two solutions are shown: Vi--IV=X V+IV=IX</p>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_014_correct_error.png" alt="solution_014_correct_error.png" loading="lazy"></figure></div>
+      <div class="images"><figure class="image-block"><img src="images/fallback_crops/solution_014_print_189.png" alt="solution_014_print_189.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -412,7 +285,7 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="solution">
     <div class="cell-inner">
       <div class="status-pill">Image-Only Answer</div>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_015_four_out_of_three.png" alt="solution_015_four_out_of_three.png" loading="lazy"></figure></div>
+      <div class="images"><figure class="image-block"><img src="images/fallback_crops/solution_015_print_189.png" alt="solution_015_print_189.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -428,7 +301,7 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="solution">
     <div class="cell-inner">
       <div class="status-pill">Image-Only Answer</div>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_016_three_and_two_is_eight.png" alt="solution_016_three_and_two_is_eight.png" loading="lazy"></figure></div>
+      <div class="images"><figure class="image-block"><img src="images/manual_overrides/solution_016_three_and_two_is_eight_source.png" alt="solution_016_three_and_two_is_eight_source.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -444,7 +317,7 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="solution">
     <div class="cell-inner">
       <div class="status-pill">Image-Only Answer</div>
-      <div class="images"><figure class="image-block"><img src="images/manual_crops/solution_017_three_squares.png" alt="solution_017_three_squares.png" loading="lazy"></figure></div>
+      <div class="images"><figure class="image-block"><img src="images/manual_overrides/solution_017_three_squares_source.png" alt="solution_017_three_squares_source.png" loading="lazy"></figure></div>
     </div>
     </td>
         </tr>
@@ -470,7 +343,7 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
           <td class="problem">
     <div class="cell-inner">
       <div class="cell-title">ARRANGING FLAGS</div>
-      <p>Komsomol youths have built a small hydroelectric powerhouse. Preparing for its</p><p>opening, young Communist boys and girls are decorating the powerhouse on all four sides with garlands, electric bulbs, and small flags. There are 12 flags.</p><p>au. **%</p><p>eeenk VTTTLS ae</p><p>mo</p><p>Xp \ AWN</p><p>SIS Ty</p><p>At first they arrange the flags 4 to a side, as shown, but then they see that the flags can be arranged 5 or even 6 to a side. How?</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_019_arranging_flags.png" alt="problem_019_arranging_flags.png" loading="lazy"></figure></div>
+      <p>Komsomol youths have built a small hydroelectric powerhouse. Preparing for its</p><p>opening, young Communist boys and girls are decorating the powerhouse on all four sides with garlands, electric bulbs, and small flags. There are 12 flags.</p><div class="images"><figure class="image-block"><img src="images/manual_crops/problem_019_arranging_flags.png" alt="problem_019_arranging_flags.png" loading="lazy"></figure></div><p>At first they arrange the flags 4 to a side, as shown, but then they see that the flags can be arranged 5 or even 6 to a side. How?</p>
     </div>
     </td>
           <td class="solution">
@@ -496,7 +369,6 @@ If no checkers are available, use coins, or cut pieces out of paper or cardboard
     </div>
     </td>
         </tr>
-        
         </tbody>
       </table>
     </div>
